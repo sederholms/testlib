@@ -12,3 +12,4 @@ lazy val root = (project in file(".")).
 
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
 
+publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.ivy2/local/")))
